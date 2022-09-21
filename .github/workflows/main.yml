@@ -20,8 +20,6 @@ jobs:
           with:
             name: logs
             path: logs
-        - name: Install service Standalone
-          run: npm install @wdio/selenium-standalone-service --save-dev
         - name: Install Allure
           run: npm install allure-commandline --save-dev
         - name: run all test (Chrome, Firefox)
