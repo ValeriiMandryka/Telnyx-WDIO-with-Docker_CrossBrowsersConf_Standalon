@@ -11,6 +11,8 @@ jobs:
             node-version: 18
         - name: Install
           run: npm install
+        - name: Install Servic Standalon
+          run: npm install @wdio/selenium-standalone-service --save-dev
         - name: Test
           run: firefox:ui:messaging 
         - uses: actions/upload-artifact@v1
