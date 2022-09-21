@@ -8,9 +8,11 @@ jobs:
           uses: actions/checkout@v2
         - uses: actions/setup-node@v1
           with:
-            node-version: 18
+            node-version: 1
         - name: Install
           run: npm install
+        - name: Install Selenium
+          run: npm install @wdio/selenium-standalone-service --save-dev
         - name: Test
           run: npm run chrome:ui
         - uses: actions/upload-artifact@v1
