@@ -8,11 +8,13 @@ jobs:
           uses: actions/checkout@v2
         - uses: actions/setup-node@v1
           with:
-            node-version: 16.x
+            node-version: 18
         - name: Install
-          run: npm ci
-        #- name: Install Servic Standalon
-        #  run: npm install @wdio/selenium-standalone-service --save-dev
+          run: npm install
         - name: Test
-          run: npm run firefox:ui:messaging 
-       
+          run: npm run chrome:ui
+        - uses: actions/upload-artifact@v1
+          if: failure()
+          with:
+            name: logs
+            path: logs
