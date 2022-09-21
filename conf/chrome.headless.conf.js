@@ -3,7 +3,7 @@ const path = require("path");
 
 const chromeHeadlessConfig = {
 ...config,
-services: ["selenium-standalone"],
+services:  [['selenium-standalone', {chrome: 'latest'}]],
 capabilities: [{
 maxInstances: 4,
 browserName: "chrome",
