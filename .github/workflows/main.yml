@@ -13,23 +13,6 @@ jobs:
           run: npm install
         - name: Install Servic Standalon
           run: npm install @wdio/selenium-standalone-service --save-dev
-        - name: Install Allure
-          run: npm install allure-commandline --save-dev
         - name: Test
           run: npm run firefox:ui:messaging 
-        - uses: actions/upload-artifact@v1
-          if: failure()
-          with:
-            name: logs
-            path: logs
-        - name: Generate report
-          if: always()
-          run: npx allure generate allure-results --clean
-        - name: Deploy to pages
-          if: always()
-          uses: peaceiris/actions-gh-pages@v3.7.3
-          with:
-             github_token: ${{ secrets.GITHUB_TOKEN }}
-             publish_branch: gh-pages
-             publish_dir: allure-report
-
+       
