@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
-        run: docker-compose up -d
+        run: docker-compose up 
       - name: Test
-        run: npx wdio run conf/docker.conf.js
+        run: npx wdio run conf/docker.conf.js --spec logining.module.js
