@@ -16,6 +16,8 @@ jobs:
     - run: npm ci
     - name: Install webdriver
       run: npm install
+    - name: Install service Standalone
+      run: npm install @wdio/selenium-standalone-service --save-dev
     - name: Install Allure
       run: npm install allure-commandline --save-dev
     - name: run all test (Chrome, Firefox)
