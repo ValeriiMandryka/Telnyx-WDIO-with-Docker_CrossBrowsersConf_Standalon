@@ -2,8 +2,6 @@ name: main GitHubActions
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
 jobs:
   test:
     timeout-minutes: 60
@@ -16,34 +14,20 @@ jobs:
     - run: npm ci
     - name: Install webdriver
       run: npm install
+    - name: Install service Standalone
+      run: npm install @wdio/selenium-standalone-service --save-dev
     - name: Install Allure
       run: npm install allure-commandline --save-dev
     - name: run all test (Chrome, Firefox)
-      run: npm run crossbrowser:test:headless
-    - name: Copy History
+      run: npm run firefox:ui:messaging
+    - name: Generate report
       if: always()
-      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history
-    - name: Generate Report
+      run: npx allure generate allure-results --clean
+    - name: Deploy to pages
       if: always()
-      run: npm run allure-generate # Name of the allure generate script
-    - name: Upload Results
-      uses: actions/upload-artifact@v1
-      if: always()
+      uses: peaceiris/actions-gh-pages@v3.7.3
       with:
-          name: allure-results
-          path: ./allure-results # Name of the folder with allure results                    
-    - name: Publishing Allure artifact to Github Actions
-       
-      uses: actions/upload-artifact@v2
-      if: always()
-      with:
-          name: allure-report
-          path: allure-report        
-    - name: Deploy report
-      uses: JamesIves/github-pages-deploy-action@4.1.4
-      if: always()
-      with:
-          branch: main # The branch the action should deploy to.
-          folder: allure-report # The folder the action should deploy.
-          target-folder: docs
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-report
 
