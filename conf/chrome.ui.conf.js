@@ -4,7 +4,7 @@ const path = require("path");
 const chromeConfig = {
 ...config,
 services: [
-    ['selenium-standalone', { drivers: {  chrome: true, chromiumedge: 'latest' } }]
+    ['selenium-standalone']
 ],
 capabilities: [{
 maxInstances: 1,
