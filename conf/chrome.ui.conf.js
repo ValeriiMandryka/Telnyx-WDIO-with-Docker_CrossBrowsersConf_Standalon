@@ -18,7 +18,7 @@ args: [ '--start-maximized', '--no-sandbox', '--disable -gpu',  '--allow-insecur
 logLevel: 'warn',
 
 
-path: "/wd/hub",
+//path: "/wd/hub",
 
 };
 
