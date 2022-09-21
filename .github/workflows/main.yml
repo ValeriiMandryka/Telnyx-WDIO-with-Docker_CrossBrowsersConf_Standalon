@@ -10,9 +10,9 @@ jobs:
           with:
             node-version: 16.x
         - name: Install
-          run: npm install
-        - name: Install Servic Standalon
-          run: npm install @wdio/selenium-standalone-service --save-dev
+          run: npm ci
+        #- name: Install Servic Standalon
+        #  run: npm install @wdio/selenium-standalone-service --save-dev
         - name: Test
           run: npm run firefox:ui:messaging 
        
