@@ -12,8 +12,6 @@ jobs:
       with:
         node-version: '14.x'
     - run: npm ci
-    - name: Install webdriver
-      run: npm install
     - name: Install service Standalone
       run: npm install @wdio/selenium-standalone-service --save-dev
     - name: Install Allure
