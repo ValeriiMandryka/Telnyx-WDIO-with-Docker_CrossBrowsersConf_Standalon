@@ -6,16 +6,16 @@ const chromeConfig = {
 
 services: [
     ['selenium-standalone', {
-        logPath: './temp',
+        //logPath: './temp',
         args: {
             version: "3.141.59",
-            seleniumArgs: ['-host', '127.0.0.1','-port', '5555']
+           // seleniumArgs: ['-host', '127.0.0.1','-port', '5555']
         },
     }]
 ],
 capabilities: [{
     browserName: 'chrome',
-    port: 5555
+   // port: 5555
 }],
 // services: [
 //     ['selenium-standalone']
