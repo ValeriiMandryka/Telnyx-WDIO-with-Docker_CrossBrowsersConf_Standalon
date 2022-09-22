@@ -4,7 +4,7 @@
 
 ## 1. Envoirment for succesfull test runung:
    1.1. [Node.js](https://nodejs.org/uk/)
-   1.2. [VSC](https://nodejs.org/uk/)https://code.visualstudio.com/download)
+   1.2. [VSC](https://code.visualstudio.com/download)
    
 ## 2. Envoirment to run in Docker:
    2.1. [Docker](https://docs.docker.com/desktop/install/windows-install/)
