@@ -19,11 +19,6 @@ jobs:
           run: npm i allure-commandline
         - name: Test
           run: npx wdio run wdio.conf.js --spec logining.module.js
-        - uses: actions/upload-artifact@v1
-          if: failure()
-          with:
-            name: logs
-            path: logs
         - name: Generate report
           if: always()
           run: npm run allure:report
