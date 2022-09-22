@@ -14,6 +14,11 @@ args: ['--headless', '--start-maximized', '--no-sandbox', '--disable -gpu', '--w
 },
 }],
 logLevel: 'warn',
+reporters: [['allure', {
+    outputDir: 'allure-results',
+    disableWebdriverStepsReporting: true,
+    disableWebdriverScreenshotsReporting: true,
+}]],
 
 
 path: "/wd/hub",
