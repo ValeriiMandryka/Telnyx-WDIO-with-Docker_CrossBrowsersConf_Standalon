@@ -22,10 +22,22 @@ jobs:
         - name: Generate report
           if: always()
           run: npm run allure:report
-        - name: Deploy to pages
-          if: always()
-          uses: peaceiris/actions-gh-pages@v3.7.3
-          with:
-              github_token: ${{ secrets.GITHUB_TOKEN }}
-              publish_branch: gh-pages
-              publish_dir: allure-report
+        - name: Upload Results
+      uses: actions/upload-artifact@v1
+      if: always()
+      with:
+          name: allure-results
+          path: ./allure-results
+    - name: Publishing Allure artifact to Github Actions
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+          name: allure-report
+          path: allure-report   
+    - name: Deploy to pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v3.7.3
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-report
