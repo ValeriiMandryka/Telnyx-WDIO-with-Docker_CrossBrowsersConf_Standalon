@@ -1,4 +1,4 @@
-const loginPage = require("../pageobjects/login.Page")
+const loginPage = require("../pageobjects/login.page")
 const mainPage = require("../pageobjects/main.page")
 const portalPage = require("../pageobjects/portal.page")
 
