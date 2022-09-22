@@ -18,7 +18,7 @@ jobs:
         - name: Install Allure comandline
           run: npm i allure-commandline
         - name: Test
-          run: npx wdio run wdio.conf.js --spec logining.module.js
+          run: npm run firefox:ui
         - uses: actions/upload-artifact@v1
           if: failure()
           with:
