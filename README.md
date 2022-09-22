@@ -16,7 +16,7 @@
 git clone https://github.com/ValeriiMandryka/WDIO_Docker_CrossBrowsersConf_Standalon_Telnyx.git
 
 ```
-## 3. Install depandens:
+## 3. Install depandencies:
 ```
 npm install
 
