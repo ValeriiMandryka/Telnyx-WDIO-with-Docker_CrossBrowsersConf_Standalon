@@ -21,7 +21,7 @@ jobs:
           run: npx wdio run wdio.conf.js --spec logining.module.js
         - name: Generate report
           if: always()
-          run: npx wdio run conf/firefox.headless.conf.js --spec logining.module.js
+          run: npx wdio run wdio.conf.js
         # - name: Upload Results
         #   uses: actions/upload-artifact@v1
         #   if: always()

@@ -13,8 +13,8 @@
         "wdio-docker-service": "^3.2.1"
     },
     "scripts": {
-        "crossbrowser:test:headless": "wdio run wdio.conf.js",
-        "crossbrowser:test:headless:allure": "wdio run wdio.conf.js && allure generate allure-results --clean && allure open",
+        "crossbrowser:test:headless": "npx wdio run wdio.conf.js",
+        "crossbrowser:test:headless:allure": "npx wdio run wdio.conf.js && allure generate allure-results --clean && allure open",
         "chrome:headless": "npx wdio run conf/chrome.headless.conf.js",
         "chrome:ui": "npx wdio run conf/chrome.ui.conf.js",
         "firefox:headless": "npx wdio run conf/firefox.headless.conf.js",

@@ -1,5 +1,5 @@
 name: docker-compose-actions-workflow
-on: pull
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest
