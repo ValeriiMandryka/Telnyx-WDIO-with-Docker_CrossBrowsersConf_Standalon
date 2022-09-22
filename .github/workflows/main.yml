@@ -18,10 +18,10 @@ jobs:
         - name: Install Allure comandline
           run: npm i allure-commandline
         - name: Test
-          run: npx wdio run wdio.conf.js --spec logining.module.js
+          run: npx wdio run wdio.conf.js
         - name: Generate report
           if: always()
-          run: npx wdio run wdio.conf.js
+          run: npx allure generate allure-results --clean
         # - name: Upload Results
         #   uses: actions/upload-artifact@v1
         #   if: always()
