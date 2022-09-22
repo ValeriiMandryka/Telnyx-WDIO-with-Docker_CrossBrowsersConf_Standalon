@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Sep 22 09:30:16 UTC 2022","Thu Sep 22 09:30:18 UTC 2022","1994","","Logining","","Logining","Open URL/accept cookies","Open URL/accept cookies",""
-"passed","Thu Sep 22 09:30:34 UTC 2022","Thu Sep 22 09:30:37 UTC 2022","3428","","Logining","","Logining","Open URL/accept cookies","Open URL/accept cookies",""
-"passed","Thu Sep 22 09:30:37 UTC 2022","Thu Sep 22 09:30:45 UTC 2022","8145","","Logining","","Logining","Verify Log in with valid credentials","Verify Log in with valid credentials",""
-"broken","Thu Sep 22 09:30:18 UTC 2022","Thu Sep 22 09:30:19 UTC 2022","1003","","Logining","","Logining","Verify Log in with valid credentials","Verify Log in with valid credentials",""
