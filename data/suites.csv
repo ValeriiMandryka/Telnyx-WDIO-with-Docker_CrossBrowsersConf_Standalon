@@ -1,5 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Sep 22 09:52:13 UTC 2022","Thu Sep 22 09:52:17 UTC 2022","4083","","Logining","","Logining","Open URL/accept cookies","Open URL/accept cookies",""
-"passed","Thu Sep 22 09:52:37 UTC 2022","Thu Sep 22 09:52:43 UTC 2022","5941","","Logining","","Logining","Verify Log in with valid credentials","Verify Log in with valid credentials",""
-"broken","Thu Sep 22 09:52:17 UTC 2022","Thu Sep 22 09:52:18 UTC 2022","510","","Logining","","Logining","Verify Log in with valid credentials","Verify Log in with valid credentials",""
-"passed","Thu Sep 22 09:52:33 UTC 2022","Thu Sep 22 09:52:37 UTC 2022","3483","","Logining","","Logining","Open URL/accept cookies","Open URL/accept cookies",""
+"passed","Thu Sep 22 09:53:38 UTC 2022","Thu Sep 22 09:53:40 UTC 2022","2649","","Logining","","Logining","Open URL/accept cookies","Open URL/accept cookies",""
+"passed","Thu Sep 22 09:53:40 UTC 2022","Thu Sep 22 09:53:46 UTC 2022","6144","","Logining","","Logining","Verify Log in with valid credentials","Verify Log in with valid credentials",""
