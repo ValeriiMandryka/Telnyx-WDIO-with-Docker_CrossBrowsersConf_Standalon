@@ -9,6 +9,7 @@
         "@wdio/mocha-framework": "^7.24.0",
         "@wdio/selenium-standalone-service": "^7.24.0",
         "@wdio/spec-reporter": "^7.24.0",
+        "cross-env": "^7.0.3",
         "install": "^0.13.0",
         "wdio-docker-service": "^3.2.1"
     },
@@ -23,7 +24,9 @@
         "allure-serve": "npx allure serve allure-results",
         "docker:crossbrowser": "npx wdio run conf/docker.conf.js",
         "docker:composeruner:exit": "docker compose up --abort-on-container-exit",
-        "firefox:ui:messaging": "npx wdio run conf/firefox.ui.conf.js --spec messaging.module.js"
+        "firefox:ui:messaging": "npx wdio run conf/firefox.ui.conf.js --spec messaging.module.js",
+        "cross.env:chrome": "cross-env BROWSER=CHROME npx wdio run envoirment/wdioENV.conf.js --spec logining.module.js",
+        "cross.env:firefox": "cross-env BROWSER=firefox npx wdio run envoirment/wdioENV.conf.js --spec logining.module.js"
     },
     "dependencies": {
         "allure-commandline": "^2.18.1"
