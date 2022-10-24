@@ -1,6 +1,6 @@
 
    
-# Telnyx_Docker_crossBrowsersTest_AllureReport   [Telnyx](https://telnyx.com/)
+# WDIO_Docker_crossBrowsersTest_AllureReport  
 
 ## 1. Envoirment for succesfull test runung:
    1.1. [Node.js](https://nodejs.org/uk/)
